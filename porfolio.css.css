@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
    
-   
+   /* --------- start Nav --------- */
 }
 nav{
     background-color: #F47F12;
@@ -16,10 +16,18 @@ nav{
     
 }
 
+   /* --------- End Nav --------- */
+
+      /* --------- start main image --------- */
+
 main{
     background-color: #384D74;
-    
     padding-bottom: 150px;
+}
+
+.Text-Inside-Image{
+    position: relative;
+    padding-bottom: 250px;
 }
 
 main img{
@@ -28,10 +36,9 @@ main img{
 }
 
 .Text-Inside-Image .Hello{
-    position: relative;
-    bottom: 660px;
+    position: absolute;
+    top: 80px;
     left: 130px;
-
     font-size: 90px;
     font-style: italic;
     font-weight: 700;
@@ -41,10 +48,9 @@ main img{
 }
 
 .Text-Inside-Image .Name{
-    position: relative;
-    bottom: 640px;
+    position: absolute;
+    top: 220px;
     left: 120px;
-
     font-size: 72px;
     font-style: italic;
     font-weight: 700;
@@ -54,10 +60,9 @@ main img{
 }
 
 .Text-Inside-Image .Orange-Academy{
-    position: relative;
-    bottom: 600px;
+    position: absolute;
+    top: 350px;
     left: 120px;
-
     font-size: 42px;
     font-style: italic;
     font-weight: 700;
@@ -66,9 +71,9 @@ main img{
 }
 
 .Text-Inside-Image .Button{
-    position: relative;
-    bottom: 570px;
-    left: 250px;
+    position: absolute;
+    top: 500px;
+    left: 233px;
     background-color: #384D74;
     stroke: none;
     border: #384D74;
@@ -76,8 +81,33 @@ main img{
     color: #F47F12;
     font-weight: 600;
     font-family: "Times New Roman", Times, serif;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
 }
+
+   /* --------- End main Image --------- */
+
+   .h2{
+    position: relative;
+    font-weight: 900;
+    color:#2a3e63;
+    text-align: center;
+    font-size: 50px;
+    font-family:'Times New Roman', Times, serif;
+    -webkit-text-stroke: 1px #F47F12;
+    text-transform: uppercase;
+   }
+
+   .h2::before
+   {
+    content: attr(data-text);
+    position: absolute;
+    top: 0px;
+    left: opx;
+    width: 100%;
+    height: 100%;
+    animation: animate 6s ;
+    overflow: hidden;
+   }
 
 .Personal{
     display: flex;
@@ -85,18 +115,29 @@ main img{
     justify-content: space-evenly;
 }
 
+.Personal-Information{
+    border: 4px ;
+    border-color: #F47F12;
+    border-style: double;
+    
+    width: 600px;
+    height: 500px;
+}
+
 .Personal ul li{
     list-style: none;
 } 
 
 .info{
-    font-size: 23px;
+    font-size: 27px;
+    white-space: pre;
 
 }
+
 #information{
     padding: 15px 10px 15px 10px;
     background-color: #F47F12;
-  
+    text-align: center;
 }
 
 .Personal img{
@@ -113,6 +154,7 @@ main img{
 }
 
 #Education ul li{
+    
     list-style: none;
     text-align: center;
 } 
@@ -120,11 +162,22 @@ main img{
 .Education-B{
     padding: 15px 10px 15px 10px;
     background-color: #F47F12;
+    text-align: center;
+}
+
+.Education-class{
+    border: 4px;
+    border-color: #F47F12;
+    border-style: double;
+    width: 600px;
+    height: 500px;
 }
 
 .Educ{
-    font-size: 23px;
+    font-size: 27px;
     padding-top: 70px;
+    white-space: pre;
+    text-align: center;
 }
 
 #Education img{
@@ -135,7 +188,7 @@ main img{
 
 
 #Hobby{
-    display: flex;
+  display: flex;
     padding-top: 100px;
     color: white;
     justify-content: space-evenly;
@@ -144,24 +197,35 @@ main img{
 #Hobby img{
     width: 600px;
     height: 500px;
-    margin-left:  70px; ;
+    /* margin-left:  70px; ; */
+}
+.Hobby-ul{
+    border: 4px;
+    border-color: #F47F12;
+    border-style: double;
+    width: 600px;
+    height: 500px;
+
 }
 
 
 .Hobby-Header{
-    padding: 15px 60px 15px 60px;
+    padding: 15px 0px 15px 6px;
     background-color: #F47F12;
+    text-align: center;
     
 }
 
 .Hobby-Paragraph{
-    font-size: 23px;
+    font-size: 27px;
     padding-top: 40px;
-    
+    text-align: center;
+  
 }
 
 #Hobby ul li{
     list-style: none;
+    
 }
 
 footer{
@@ -180,4 +244,73 @@ footer img{
 .footer{
     margin: 20px 20px 20px 20px;
     
+}
+
+
+/*------- Start Image Slider -------*/
+
+.slider-frame{
+    overflow: hidden;
+    width: 600px;
+    height: 500px;
+
+}
+
+
+@-webkit-keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 600px;}
+    30% {left: 600px;}
+    40% {left: 1200;}
+    50% {left: 1200;}
+    60% {left: 600px;}
+    70% {left: 600px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+
+}
+
+.slide-Image{
+    width: 1800px;
+    height: 500px;
+    position: relative;
+    margin: 0 0 0 -1200px;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+
+.img-container{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    float: left;
+
+}
+
+
+
+/*---------------- End Image Slider -----------------*/
+
+
+body{
+
+padding: 0;
+margin: 0;
+background-color: rgb(226, 226, 226);
+}
+
+.images img{
+    width: 1000px;
+}
+
+.images{
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
 }
