@@ -3,25 +3,15 @@
     padding: 0px;
     box-sizing: border-box;
    
-   /* --------- start Nav --------- */
-}
-/* nav{
-    background-color: #F47F12;
-    height: 100px;
-    
 }
 
-.nav-link{
-   position: relative;
-   left: 700px;
-    
-} */
 
-   /* --------- End Nav --------- */
+
 
       /* --------- start main image --------- */
 
 main{
+
     background-color: #384D74;
     padding-bottom: 150px;
 }
@@ -29,18 +19,32 @@ main{
 .Text-Inside-Image{
     position: relative;
     padding-bottom: 250px;
-}
-
-main img{
     width: 100%;
-  
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    
 }
 
-.Text-Inside-Image .Hello{
-    position: absolute;
-    top: 80px;
-    left: 130px;
-    font-size: 90px;
+.Text-Inside-Image p{
+margin-left: 15%;
+
+}
+
+.Name{
+z-index: 10;
+}
+
+.Hello{
+    font-size: 7vw;
+    font-style: italic;
+    font-weight: 700;
+    font-family: arial;
+    color: white;
+}
+
+.Anzor{
+    font-size: 5vw;
     font-style: italic;
     font-weight: 700;
     font-family: arial;
@@ -48,11 +52,52 @@ main img{
 
 }
 
+.Orange{
+    font-size: 3vw;
+    font-style: italic;
+    font-weight: 700;
+    font-family: arial;
+    color: white;
+}
+
+
+.Button{
+    background-color: #384D74;
+    stroke: none;
+    border: #384D74;
+    font-size: 2vw;
+    color: #F47F12;
+    font-weight: 600;
+    font-family: "Times New Roman", Times, serif;
+    padding: 10px 30px 10px 30px;
+}
+
+main img{
+    width: 100%;
+    position: absolute;
+  
+}
+/* 
+.Text-Inside-Image .Hello{
+    position: absolute;
+    top: 80px;
+    left: 130px;
+    font-size: 8vw;
+    font-style: italic;
+    font-weight: 700;
+    font-family: arial;
+    color: white;
+    width: 100%;
+
+}
+
+
+
 .Text-Inside-Image .Name{
     position: absolute;
     top: 220px;
     left: 120px;
-    font-size: 72px;
+    font-size: 7vw;
     font-style: italic;
     font-weight: 700;
     font-family: arial;
@@ -64,11 +109,12 @@ main img{
     position: absolute;
     top: 350px;
     left: 120px;
-    font-size: 42px;
+    font-size: 5vw;
     font-style: italic;
     font-weight: 700;
     font-family: arial;
     color: white;
+
 }
 
 .Text-Inside-Image .Button{
@@ -78,29 +124,36 @@ main img{
     background-color: #384D74;
     stroke: none;
     border: #384D74;
-    font-size: 27px;
+    font-size: 3vw;
     color: #F47F12;
     font-weight: 600;
     font-family: "Times New Roman", Times, serif;
     padding: 10px 30px 10px 30px;
-}
+} */
 
    /* --------- End main Image --------- */
 
 
 
+ /* --------- Start Personal Information --------- */
+ .Three-Image{
+    padding-top: 230px;
+ }
 
 .Personal{
+    
     display: flex;
     color: white;
     justify-content: space-evenly;
+    width: 100%;
+    /* flex-wrap: wrap; */
+   
 }
 
 .Personal-Information{
     border: 4px ;
     border-color: #F47F12;
     border-style: double;
-    
     width: 600px;
     height: 500px;
 }
@@ -110,15 +163,23 @@ main img{
 } 
 
 .info{
-    font-size: 27px;
+    font-size: 2vw;
     white-space: pre;
 
 }
+
+
 
 #information{
     padding: 15px 10px 15px 10px;
     background-color: #F47F12;
     text-align: center;
+
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    width: 100%;
+
 }
 
 .Personal img{
@@ -126,7 +187,10 @@ main img{
     height: 500px;
 }
 
+ /* --------- End Personal Information --------- */
 
+
+  /* --------- Start Education --------- */
 #Education{
     padding-top: 100px;
     display: flex;
@@ -155,7 +219,7 @@ main img{
 }
 
 .Educ{
-    font-size: 27px;
+    font-size: 2vw;
     padding-top: 70px;
     white-space: pre;
     text-align: center;
@@ -166,8 +230,10 @@ main img{
     height: 500px;
 }
 
+ /* --------- End Education --------- */
 
 
+  /* --------- Start My-Hobby --------- */
 #Hobby{
   display: flex;
     padding-top: 100px;
@@ -198,7 +264,7 @@ main img{
 }
 
 .Hobby-Paragraph{
-    font-size: 27px;
+    font-size: 2vw;
     padding-top: 40px;
     text-align: center;
   
@@ -208,12 +274,15 @@ main img{
     list-style: none;
     
 }
+/* --------- End My-Hobby --------- */
 
-footer{
+
+.foot{
     display: flex;
-    background-color: #376B9C;
+    background-color: #384D74;
     justify-content: end;
-    padding-right: 250px;
+    padding-right: 90px;
+    border-image-width: 20px;
 }
 
 footer img{
@@ -223,10 +292,18 @@ footer img{
 }
 
 .footer{
-    margin: 20px 20px 20px 20px;
+    margin: 20px 0px 20px 20px;
+
     
 }
 
+.copyright{
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: start;
+    
+}
 
 /*------- Start Image Slider -------*/
 
@@ -278,7 +355,7 @@ footer img{
 
 /*---------------- End Image Slider -----------------*/
 
-
+/* 
 body{
 
 padding: 0;
@@ -294,4 +371,18 @@ background-color: rgb(226, 226, 226);
     padding: 50px 0 50px 0;
     display: flex;
     justify-content: center;
+} */
+
+@media screen and (max-width:850px){
+    .info{
+        font-size: 4vw;
+    }
+   
+        .Educ{
+            font-size: 4vw;
+    }
+    .Hobby-Paragraph{
+        font-size: 4vw;
+    }
 }
+
