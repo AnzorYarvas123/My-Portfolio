@@ -8,6 +8,7 @@
 
 
 
+
       /* --------- start main image --------- */
 
 main{
@@ -43,6 +44,7 @@ z-index: 10;
     color: white;
 }
 
+
 .Anzor{
     font-size: 5vw;
     font-style: italic;
@@ -77,67 +79,16 @@ main img{
     position: absolute;
   
 }
-/* 
-.Text-Inside-Image .Hello{
-    position: absolute;
-    top: 80px;
-    left: 130px;
-    font-size: 8vw;
-    font-style: italic;
-    font-weight: 700;
-    font-family: arial;
-    color: white;
-    width: 100%;
-
-}
-
-
-
-.Text-Inside-Image .Name{
-    position: absolute;
-    top: 220px;
-    left: 120px;
-    font-size: 7vw;
-    font-style: italic;
-    font-weight: 700;
-    font-family: arial;
-    color: white;
-
-}
-
-.Text-Inside-Image .Orange-Academy{
-    position: absolute;
-    top: 350px;
-    left: 120px;
-    font-size: 5vw;
-    font-style: italic;
-    font-weight: 700;
-    font-family: arial;
-    color: white;
-
-}
-
-.Text-Inside-Image .Button{
-    position: absolute;
-    top: 500px;
-    left: 233px;
-    background-color: #384D74;
-    stroke: none;
-    border: #384D74;
-    font-size: 3vw;
-    color: #F47F12;
-    font-weight: 600;
-    font-family: "Times New Roman", Times, serif;
-    padding: 10px 30px 10px 30px;
-} */
 
    /* --------- End main Image --------- */
 
 
 
+
+
  /* --------- Start Personal Information --------- */
  .Three-Image{
-    padding-top: 230px;
+    padding-top: 280px;
  }
 
 .Personal{
@@ -222,7 +173,7 @@ main img{
     font-size: 2vw;
     padding-top: 70px;
     white-space: pre;
-    text-align: center;
+   
 }
 
 #Education img{
@@ -235,7 +186,7 @@ main img{
 
   /* --------- Start My-Hobby --------- */
 #Hobby{
-  display: flex;
+    display: flex;
     padding-top: 100px;
     color: white;
     justify-content: space-evenly;
@@ -277,32 +228,36 @@ main img{
 /* --------- End My-Hobby --------- */
 
 
-.foot{
+.footerss{
     display: flex;
     background-color: #384D74;
-    justify-content: end;
+    justify-content: space-between;
     padding-right: 90px;
-    border-image-width: 20px;
+
+   
 }
 
 footer img{
     width: 70px;
     height: 70px;
-
 }
 
 .footer{
-    margin: 20px 0px 20px 20px;
+    margin: 10px 10px 10px 10px;
+}
 
+.border{
     
+     color:  rgb(160, 160, 160);
+     width: 100%;
 }
 
 .copyright{
-    display: flex;
-    font-size: 30px;
+    display:flex;
+    font-size: 20px;
     color: white;
-    justify-content: start;
-    
+    align-items: flex-end;
+
 }
 
 /*------- Start Image Slider -------*/
@@ -314,21 +269,6 @@ footer img{
 
 }
 
-
-@-webkit-keyframes slide_animation{
-    0% {left: 0px;}
-    10% {left: 0px;}
-    20% {left: 600px;}
-    30% {left: 600px;}
-    40% {left: 1200;}
-    50% {left: 1200;}
-    60% {left: 600px;}
-    70% {left: 600px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left: 0px;}
-
-}
 
 .slide-Image{
     width: 1800px;
@@ -352,37 +292,43 @@ footer img{
 }
 
 
+.slider-frame{
+    box-shadow: 15px 15px 15px #302f2f;
+}
+
+
+@-webkit-keyframes slide_animation{
+    0% {left: 0px;}
+    10% {left: 0px;}
+    20% {left: 600px;}
+    30% {left: 600px;}
+    40% {left: 1200;}
+    50% {left: 1200;}
+    60% {left: 600px;}
+    70% {left: 600px;}
+    80% {left: 0px;}
+    90% {left: 0px;}
+    100% {left: 0px;}
+
+}
+
+
+
 
 /*---------------- End Image Slider -----------------*/
 
-/* 
-body{
 
-padding: 0;
-margin: 0;
-background-color: rgb(226, 226, 226);
-}
-
-.images img{
-    width: 1000px;
-}
-
-.images{
-    padding: 50px 0 50px 0;
-    display: flex;
-    justify-content: center;
-} */
 
 @media screen and (max-width:850px){
     .info{
-        font-size: 4vw;
+        font-size: 3vw;
     }
    
         .Educ{
-            font-size: 4vw;
+            font-size: 3vw;
     }
     .Hobby-Paragraph{
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }
 
