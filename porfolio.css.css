@@ -5,10 +5,6 @@
    
 }
 
-
-
-
-
       /* --------- start main image --------- */
 
 main{
@@ -83,9 +79,6 @@ main img{
    /* --------- End main Image --------- */
 
 
-
-
-
  /* --------- Start Personal Information --------- */
  .Three-Image{
     padding-top: 280px;
@@ -97,8 +90,7 @@ main img{
     color: white;
     justify-content: space-evenly;
     width: 100%;
-    /* flex-wrap: wrap; */
-   
+ 
 }
 
 .Personal-Information{
@@ -125,7 +117,6 @@ main img{
     padding: 15px 10px 15px 10px;
     background-color: #F47F12;
     text-align: center;
-
     display: flex;
     color: white;
     justify-content: space-evenly;
@@ -238,12 +229,12 @@ main img{
 }
 
 footer img{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
 }
 
 .footer{
-    margin: 10px 10px 10px 10px;
+    margin: 10px 20px 10px 0px;
 }
 
 .border{
@@ -313,11 +304,7 @@ footer img{
 }
 
 
-
-
 /*---------------- End Image Slider -----------------*/
-
-
 
 @media screen and (max-width:850px){
     .info{
