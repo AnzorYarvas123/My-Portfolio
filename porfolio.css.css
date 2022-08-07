@@ -13,9 +13,23 @@ main{
     padding-bottom: 150px;
 }
 
+.My-Title{
+animation: shadow 3s ease-in-out infinite;
+}
+
+@keyframes shadow {
+    0%{text-shadow: 5px 5px 3px #532800}
+    50%{text-shadow: -5px 5px 3px #532800}
+    100%{text-shadow: 5px 5px 3px #cd6b10}
+    100%{text-shadow: 5px 5px 3px #cd6b10}
+    50%{text-shadow: -5px 5px 3px #532800}
+    0%{text-shadow: 5px 5px 3px #532800}
+}
+
+
 .Text-Inside-Image{
     position: relative;
-    padding-bottom: 250px;
+    /* padding-bottom: 250px; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -29,7 +43,7 @@ margin-left: 15%;
 }
 
 .Name{
-z-index: 10;
+    z-index: 10;
 }
 
 .Hello{
@@ -39,6 +53,7 @@ z-index: 10;
     font-family: arial;
     color: white;
 }
+
 
 
 .Anzor{
@@ -61,27 +76,54 @@ z-index: 10;
 
 .Button{
     background-color: #384D74;
-    stroke: none;
-    border: #384D74;
+    border: 20px  solid  #F47F12;
     font-size: 2vw;
     color: #F47F12;
-    font-weight: 600;
+    font-weight: 900;
     font-family: "Times New Roman", Times, serif;
     padding: 10px 30px 10px 30px;
+
 }
+
+.Hover-Button{
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #F47F12;
+}
+
+
+.Hover-Button:hover{
+    color:#384D74;
+}
+
+
+#More{
+    background-color: #384D74;
+    border: 20px solid #F47F12;
+    font-size: 2vw;
+    color: #F47F12;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 30px 10px 30px;
+
+}
+
+
+
 
 main img{
     width: 100%;
     position: absolute;
-  
+
 }
 
    /* --------- End main Image --------- */
 
 
  /* --------- Start Personal Information --------- */
+
+
  .Three-Image{
-    padding-top: 280px;
+    padding-top: 250px;
  }
 
 .Personal{
@@ -111,6 +153,10 @@ main img{
 
 }
 
+.Personal-Information{
+    box-shadow: 0px 5px 30px 3px  #F47F12;
+}
+
 
 
 #information{
@@ -138,6 +184,10 @@ main img{
     display: flex;
     color: white;
     justify-content: space-evenly;
+}
+
+.Education-class{
+    box-shadow: 0px 5px 30px 3px  #F47F12;
 }
 
 #Education ul li{
@@ -197,6 +247,9 @@ main img{
 
 }
 
+.Hobby-ul{
+    box-shadow: 0px 5px 30px 3px  #F47F12;
+}
 
 .Hobby-Header{
     padding: 15px 0px 15px 6px;
@@ -265,11 +318,11 @@ footer img{
     width: 1800px;
     height: 500px;
     position: relative;
-    margin: 0 0 0 -1200px;
+    margin: 0 0 0 -1800px;
     -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 6s;
+    -webkit-animation-duration: 11s;
     -webkit-animation-iteration-count:infinite;
-    -webkit-animation-direction: alternate;
+    -webkit-animation-direction:alternate;
     -webkit-animation-play-state: running;
 }
 
@@ -289,7 +342,7 @@ footer img{
 
 
 @-webkit-keyframes slide_animation{
-    0% {left: 0px;}
+    /* 0% {left: 0px;}
     10% {left: 0px;}
     20% {left: 600px;}
     30% {left: 600px;}
@@ -299,7 +352,34 @@ footer img{
     70% {left: 600px;}
     80% {left: 0px;}
     90% {left: 0px;}
-    100% {left: 0px;}
+    100% {left: 0px;} */
+/* 
+    0% {left:  0px;}
+    10% {left: 600px;}
+    20% {left: 600px;}
+    30% {left: 1200px;}
+    40% {left: 1200;}
+    50% {left: 1800;}
+    60% {left: 1800px;}
+    70% {left: 1200px;}
+    80% {left: 1200px;}
+    90% {left: 600px;}
+    100% {left: 0px;} */
+
+    
+    0% {left:  600px;}
+    10% {left: 600px;}
+    20% {left: 600px;}
+    30% {left: 1200px;}
+    40% {left: 1200;}
+    50% {left: 1800;}
+    60% {left: 1800px;}
+    70% {left: 1200px;}
+    80% {left: 1200px;}
+    90% {left: 600px;}
+    100% {left: 600px;}
+
+
 
 }
 
