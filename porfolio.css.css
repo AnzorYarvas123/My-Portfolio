@@ -2,10 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* background-color: #384D74; */
    
 }
 
       /* --------- start main image --------- */
+
 
 main{
 
@@ -34,10 +36,12 @@ animation: shadow 3s ease-in-out infinite;
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
+  
     
 }
 
 .Text-Inside-Image p{
+  
 margin-left: 15%;
 
 }
@@ -148,10 +152,15 @@ main img{
 } 
 
 .info{
+    display: flex;
     font-size: 2vw;
-    white-space: pre;
-
+    /* white-space: pre; */
+    padding-left: 80px;
+        
 }
+
+
+
 
 .Personal-Information{
     box-shadow: 0px 5px 30px 3px  #F47F12;
@@ -214,6 +223,7 @@ main img{
     font-size: 2vw;
     padding-top: 70px;
     white-space: pre;
+ 
    
 }
 
@@ -236,7 +246,7 @@ main img{
 #Hobby img{
     width: 600px;
     height: 500px;
-    /* margin-left:  70px; ; */
+  
 }
 .Hobby-ul{
     border: 4px;
@@ -261,7 +271,9 @@ main img{
 .Hobby-Paragraph{
     font-size: 2vw;
     padding-top: 40px;
-    text-align: center;
+    text-align: start;
+    padding-left: 100px;
+    
   
 }
 
@@ -269,6 +281,52 @@ main img{
     list-style: none;
     
 }
+
+.title-project{
+    display: flex;
+    justify-content: center;
+   padding-bottom: 50px;
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+
+
+}
+
+.project-head{
+    display: flex;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 35px;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+    background-color: #F47F12;
+   
+
+}
+
+.title-pro{
+    background-color: #384D74;
+}
+
+
+.Project{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+.Project img{
+    height: 300px;
+    width: 440px;
+}
+
+
+.Project img:hover{
+    box-shadow: 0px 5px 30px 3px  #F47F12;
+}
+
+
 /* --------- End My-Hobby --------- */
 
 
@@ -284,10 +342,12 @@ main img{
 footer img{
     width: 50px;
     height: 50px;
+    
 }
 
 .footer{
     margin: 10px 20px 10px 0px;
+  
 }
 
 .border{
@@ -298,9 +358,10 @@ footer img{
 
 .copyright{
     display:flex;
-    font-size: 20px;
+    font-size: 1.5vw;
     color: white;
-    align-items: flex-end;
+    align-items: center;
+    margin-left: 70px;
 
 }
 
@@ -386,16 +447,87 @@ footer img{
 
 /*---------------- End Image Slider -----------------*/
 
+
+
+
 @media screen and (max-width:850px){
+   
+    main{
+        padding-bottom: 130px;
+    }
+
+    .Text-Inside-Image{
+        margin-bottom: -220px;
+    }
+
+    .Three-Image{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .Button{
+        background-color: #384D74;
+        border: 5px  solid  #F47F12;
+        font-size: 2vw;
+        color: #F47F12;
+        font-weight: 600;
+        font-family: "Times New Roman", Times, serif;
+        padding: 1px 3px 1px 3px;
+    
+    }
+
+    #More{
+        background-color: #384D74;
+        border: 5px solid #F47F12;
+        font-size: 2vw;
+        color: #F47F12;
+        font-weight: 600;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 1px 3px 1px 3px;
+    
+    }
+
+    .Personal-Information{
+        width: 270px;
+    }
+   
     .info{
         font-size: 3vw;
+        padding-left: 10px;
     }
    
         .Educ{
             font-size: 3vw;
+            padding-right: 20px;
+           
+          
     }
     .Hobby-Paragraph{
         font-size: 3vw;
+        padding-left: 0px;
     }
+
+
+
+    footer img{
+        width: 30px;
+        height: 30px;
+        
+    }
+
 }
 
+@media all and (max-width:850px){
+
+    .Project{
+        display: inline-block; 
+        margin-left: 20px;
+
+    }
+    .project-head{
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+
+
+}
